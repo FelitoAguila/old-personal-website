@@ -1,44 +1,66 @@
-# vCard - Personal portfolio
+# Felix Aguila — Personal Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Personal portfolio website for **Felix Manuel Aguila Alonso**, Product Analytics Specialist & ML Engineer.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## Live Site
+https://felitoaguila.github.io/
 
-## Demo
+## About
+This site showcases my experience, projects, and skills in:
+- **Product Analytics**: ETL pipelines, KPI dashboards (Dash/Plotly), payment data analysis (Stripe, MercadoPago)
+- **Data Engineering**: SQL, MongoDB, BigQuery, Airflow, dbt, Docker
+- **Machine Learning**: scikit-learn, PyTorch, TensorFlow, computer vision, NLP
+- **Data Visualization**: Dash, Plotly, Tableau, Matplotlib, Seaborn
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## Tech Stack
+- **HTML/CSS/JavaScript** (vanilla, no build step)
+- **GitHub Pages** for hosting
+- **Ionicons** for icons
+- **Google Fonts** (Poppins)
+- **Formspree** for contact form
 
-## Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
+## Local Development
 ```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+# Serve locally
+python3 -m http.server 8000
+# Open http://localhost:8000
 ```
 
-Windows:
+No build step, no dependencies, no package.json — just open `index.html` in a browser or serve it.
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+## Project Structure
+```
+.
+├── index.html              # Main HTML file
+├── assets/
+│   ├── css/style.css       # All styles
+│   ├── js/script.js        # All interactions (navigation, modals, filters, form)
+│   └── images/             # Avatars, project screenshots, icons
+├── LICENSE
+└── README.md
 ```
 
-## Contact
+## Sections
+- **About** — Bio, tools & expertise
+- **Resume** — Experience, education, certifications
+- **Portfolio** — Filterable projects (Dash Apps, Data Analysis, ML) with detail modals
+- **Contact** — Contact form (Formspree) + links
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+## Customization
+- Update content in `index.html`
+- Styles in `assets/css/style.css`
+- Interactions in `assets/js/script.js`
+- Replace images in `assets/images/`
+
+## Analytics (Optional)
+Uncomment in `index.html`:
+```html
+<!-- Plausible -->
+<script defer data-domain="felitoaguila.github.io" src="https://plausible.io/js/script.js"></script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+```
 
 ## License
-
-MIT
+MIT — forked from [vCard by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio).
